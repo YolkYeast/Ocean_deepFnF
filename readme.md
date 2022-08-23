@@ -61,23 +61,6 @@ python train.py
 to train the model. You can press `ctrl-c` at any time to stop the training and save the checkpoints (model weights and optimizer states). The training script will resume from the latest checkpoint (if any) in the model directory and continue training.
 
 
-## Citation
-If you find the code useful for your research, we request that you cite the paper. Please contact zhihao.xia@wustl.edu with any questions.
-```
-@InProceedings{deepfnf2021,
-    author={Zhihao Xia and Micha{\"e}l Gharbi and Federico Perazzi and Kalyan Sunkavalli and Ayan Chakrabarti}
-    title     = {Deep Denoising of Flash and No-Flash Pairs for Photography in Low-Light Environments},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2021},
-    pages     = {2063-2072}
-}
-```
-
-
-## Acknowledgments
-This work was supported by the National Science Foundation under award no. [IIS-1820693](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1820693). Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors, and do not necessarily reflect the views of the National Science Foundation.
-
 
 ## License
 This implementation is licensed under the MIT License.
