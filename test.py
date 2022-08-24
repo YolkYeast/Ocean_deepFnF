@@ -17,7 +17,7 @@ tf.enable_eager_execution()
 parser = argparse.ArgumentParser()
 #parser.add_argument(
 #    '--wts', default='wts/model.npz', help='path to trianed model')
-#used for 
+#used for Kaggle
 parser.add_argument(
     '--wts', default='./model.npz', help='path to trianed model')
 opts = parser.parse_args()
@@ -28,8 +28,9 @@ def load_net(fn, model):
     for k, v in wts.items():
         model.weights[k] = tfe.Variable(v)
 
-
-datapath = 'data/testset'
+#used for Kaggle
+#datapath = 'data/testset'
+datapath = './testset'
 model_path = opts.wts
 
 model = net.Net(ksz=15, num_basis=90, burst_length=2)
