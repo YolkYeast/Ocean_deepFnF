@@ -30,7 +30,7 @@ def load_net(fn, model):
 
 #used for Kaggle
 #datapath = 'data/testset'
-datapath = './testset'
+datapath = './testset/testset'
 model_path = opts.wts
 
 model = net.Net(ksz=15, num_basis=90, burst_length=2)
