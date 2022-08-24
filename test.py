@@ -15,8 +15,11 @@ import utils.tf_utils as tfu
 tf.enable_eager_execution()
 
 parser = argparse.ArgumentParser()
+#parser.add_argument(
+#    '--wts', default='wts/model.npz', help='path to trianed model')
+#used for 
 parser.add_argument(
-    '--wts', default='wts/model.npz', help='path to trianed model')
+    '--wts', default='./model.npz', help='path to trianed model')
 opts = parser.parse_args()
 
 
