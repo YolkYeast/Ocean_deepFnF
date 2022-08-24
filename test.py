@@ -30,7 +30,7 @@ def load_net(fn, model):
 
 #used for Kaggle
 #datapath = 'data/testset'
-datapath = './testset/testset'
+datapath = './testset'
 model_path = opts.wts
 
 model = net.Net(ksz=15, num_basis=90, burst_length=2)
@@ -42,7 +42,7 @@ print('Done\n')
 for k in range(4):
     metrics = []
     for c in range(128):
-        data = np.load('%s/%s/%d/%d.npz' % (datapath, k, c))
+        data = np.load('%s/%d/%d.npz' % (datapath, k, c))
 
         alpha = data['alpha'][None, None, None, None]
         ambient = data['ambient']
