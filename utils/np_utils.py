@@ -1,4 +1,5 @@
-from skimage.measure import compare_ssim
+#from skimage.measure import compare_ssim
+from skimage.metrics import structural_similarity
 import numpy as np
 import imageio
 
