@@ -23,7 +23,7 @@ def get_psnr(pred, gt):
 
 
 def get_ssim(pred, gt):
-    ssim = compare_ssim(
+    ssim = structural_similarity(
         pred,
         gt,
         win_size=11,
